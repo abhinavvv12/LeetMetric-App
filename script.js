@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
             alert("Username cannot be Empty!!");
             return false;
         }
-        const regex = /^[a-zA-Z0-9_-]{1,15}$/;
+        const regex = /^[a-zA-Z0-9_-]{1,30}$/;
         const isMatching = regex.test(userName);
         if(!isMatching){
             alert("Invalid UserName");
