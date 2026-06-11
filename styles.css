@@ -193,6 +193,7 @@ h1{
     transform:translateY(-2px);
 }
 
+
 .progress{
     margin-top:35px;
 
@@ -292,6 +293,10 @@ h1{
 ::-webkit-scrollbar-thumb{
     background:#444;
     border-radius:10px;
+}
+
+.stats-container{
+    display: none;
 }
 
 /* ========================= */

@@ -58,6 +58,8 @@ document.addEventListener("DOMContentLoaded", function() {
             const totalMedium = 1885;
             const totalHard = 1188;
 
+            statsContainer.style.display = "block";
+
             updateProgress(easyTotal, easySolved, easyLabel,easyProgressCircle);
             updateProgress(totalMedium, mediumSolved, mediumLabel,mediumProgressCircle);
             updateProgress(totalHard, hardSolved, hardLabel,hardProgressCircle);
@@ -112,4 +114,5 @@ document.addEventListener("DOMContentLoaded", function() {
 
     })
 })
+
 
