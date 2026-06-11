@@ -58,8 +58,6 @@ document.addEventListener("DOMContentLoaded", function() {
             const totalMedium = 1885;
             const totalHard = 1188;
 
-            statsContainer.style.display = "block";
-
             updateProgress(easyTotal, easySolved, easyLabel,easyProgressCircle);
             updateProgress(totalMedium, mediumSolved, mediumLabel,mediumProgressCircle);
             updateProgress(totalHard, hardSolved, hardLabel,hardProgressCircle);
@@ -91,16 +89,18 @@ document.addEventListener("DOMContentLoaded", function() {
                 </div>
                 `
 
-            searchButton.textContent = "Search";
+            statsContainer.style.display = "block";
         }
 
         catch(error) {
             statsContainer.innerHTML = `<p>No Data Found</p>`
             console.log("Unable to find the user");
+            statsContainer.style.display = "block";
         }
         finally{
-            // searchButton.textContent = "Search";
+            searchButton.textContent = "Search";
             searchButton.disabled = false;
+            searchButton.textContent = "Search";
         }
 
     }
